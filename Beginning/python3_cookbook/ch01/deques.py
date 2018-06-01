@@ -1,0 +1,15 @@
+from collections import deque
+# time-complex of add and delete in queue is O(1),
+# faster than add and delelte in list O(N)
+q = deque(maxlen=3)
+q.append(1)
+q.append(2)
+q.append(3)
+print(q)
+q.append(4)
+print(q)
+q.appendleft(5)
+print(q)
+print(q.pop())
+print(q)
+print(q.popleft())
